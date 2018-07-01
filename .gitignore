@@ -1,0 +1,6 @@
+#outputs
+*.txt
+
+#logs
+carol-fi/logs
+*.log
