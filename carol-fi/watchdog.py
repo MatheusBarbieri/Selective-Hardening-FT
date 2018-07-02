@@ -4,7 +4,7 @@ import os
 import time
 import sys
 
-confFile = "salbp1-sa.conf"
+confFile = "salbp1-sa-duplicated.conf"
 
 timestampFile = "summary-carolfi.log"
 timestampMaxDiff=60*5 # in seconds
