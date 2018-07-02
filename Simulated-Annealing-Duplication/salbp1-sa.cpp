@@ -14,26 +14,31 @@
 #include "solution.hpp"
 
 int main(int argc, char **argv) {
-    Instance instance;
-    instance.readInstance(); //There is a single stdin
+    //initiate object 1
+    Instance instance1;
+    instance1.readInstance();
+    SimulatedAnnealing sa1(&instance1);
+    sa1.getOptions(argc, argv);
 
-    SimulatedAnnealing sa1(&instance);
-    sa1.getOptions(argc, argv); //getOptions once
-    SimulatedAnnealing sa2(sa1);
+    //initiate object2
+    Instance instance2(instance1);
+    SimulatedAnnealing sa2(sa1, &instance2);
 
-    std::thread run1 = std::thread(&SimulatedAnnealing::run, sa1);
-    std::thread run2 = std::thread(&SimulatedAnnealing::run, sa2);
-    run1.join();
-    run2.join();
+    //Run Sequentially
+    sa1.run();
+    sa2.run();
 
+    //get result to stringstream buffer
     std::stringstream data1, data2;
     sa1.saveResult(data1);
     sa2.saveResult(data2);
 
+    //transform result into std::string
     std::string result1, result2;
     result1 = data1.str();
     result2 = data2.str();
 
+    //register sdc ocorrence
     std::ofstream sdcFile("sdc_results.txt", std::ofstream::app);
     if (result1.compare(result2) != 0){
         sdcFile << "sdc detected.\n";
@@ -42,6 +47,7 @@ int main(int argc, char **argv) {
     }
     sdcFile.close();
 
+    //save results to file
     std::ofstream ofile("outputs.txt", std::ofstream::out);
     ofile << result1;
     ofile.close();

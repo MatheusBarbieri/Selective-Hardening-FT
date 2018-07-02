@@ -17,7 +17,7 @@ private:
     Instance* instance;
 public:
     SimulatedAnnealing(Instance* instance);
-    SimulatedAnnealing(const SimulatedAnnealing& sa);
+    SimulatedAnnealing(const SimulatedAnnealing& sa, Instance* inst);
 
     void run();
 

@@ -4,6 +4,13 @@ Instance::Instance(){
     this->cycleTime = 30;
 }
 
+Instance::Instance(const Instance& instance){
+    this->numberOfTasks = instance.numberOfTasks;
+    this->cycleTime = instance.cycleTime;
+    this->taskTimes = instance.taskTimes;
+    this->precedenceOrder = instance.precedenceOrder;
+}
+
 void Instance::readInstance() {
     int currentValue;
     std::cin >> numberOfTasks;

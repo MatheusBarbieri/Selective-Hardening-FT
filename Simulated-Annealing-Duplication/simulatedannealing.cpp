@@ -14,7 +14,7 @@ SimulatedAnnealing::SimulatedAnnealing(Instance* instance){
     this->bestSolution = currentSolution;
 }
 
-SimulatedAnnealing::SimulatedAnnealing(const SimulatedAnnealing& sa){
+SimulatedAnnealing::SimulatedAnnealing(const SimulatedAnnealing& sa, Instance* inst){
     this->temperature = sa.temperature;
     this->temperatureLimit = sa.temperatureLimit;
     this->decay = sa.decay;
@@ -22,7 +22,7 @@ SimulatedAnnealing::SimulatedAnnealing(const SimulatedAnnealing& sa){
     this->iterationsCount = sa.iterationsCount;
     this->seed = sa.seed;
     this->verbose = sa.verbose;
-    this->instance = sa.instance;
+    this->instance = inst;
     this->currentSolution = sa.currentSolution;
     this->bestSolution = sa.bestSolution;
 }

@@ -18,6 +18,7 @@ private:
     std::vector<std::vector <int>> precedenceOrder;
 public:
     Instance();
+    Instance(const Instance& instance);
     void readInstance();
 
     void printTimes(std::stringstream& data);
