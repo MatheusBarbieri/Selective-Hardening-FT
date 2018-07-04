@@ -105,7 +105,7 @@ class runGDB (threading.Thread):
         os.system(startCmd)
 
 
-# Check if app stops execution (otherwise kill it after a time) 
+# Check if app stops execution (otherwise kill it after a time)
 def finish(section):
     isHang = False
     now = int(time.time())
@@ -162,7 +162,7 @@ def saveOutput(section, isSDC, isHang):
         isDetected = True
     else:
         isDetected = False
-    
+
     dt = datetime.datetime.fromtimestamp(time.time())
     ymd = dt.strftime('%Y_%m_%d')
     ymdhms = dt.strftime('%Y_%m_%d_%H_%M_%S')
@@ -316,11 +316,12 @@ def genFlipScript(section):
 
 ######################## Main ########################
 def checkmd5():
-    md5 = hashlib.md5(open("flip_value.py", 'rb').read()).hexdigest()
-    if str(md5) != "260a2ce0736f2132a82053246e3272e7":
-        print("Error: Checksum of flip_value.py does not match, please use the correct file",file=sys.stderr)
-        print("It seems you are using a different version of the flip_value.py script")
-        sys.exit(0)
+    pass
+    # md5 = hashlib.md5(open("flip_value.py", 'rb').read()).hexdigest()
+    # if str(md5) != "260a2ce0736f2132a82053246e3272e7":
+    #     print("Error: Checksum of flip_value.py does not match, please use the correct file",file=sys.stderr)
+    #     print("It seems you are using a different version of the flip_value.py script")
+    #     sys.exit(0)
 
 
 def main():
@@ -329,24 +330,24 @@ def main():
     parser.add_argument('-i', '--iter', dest="iterations", help='How many times to repeat the programs in the configuration file', required=True, type=int)
     parser.add_argument('-d', '--detect', dest="detectLog", help='Detection Log File. If this file exists after execution, a successful SDC detection will be assumed', required=False, default='')
     #parser.add_argument('-m', '--model', dest="model", help='Fault injection model; all will randomly choose one fault model', required=False, choices=('single', 'double', 'random', 'zeros', 'lsb', 'all'), default='all')
-    
+
     args = parser.parse_args()
     if args.iterations < 1:
         parser.error('Iterations must be greater than zero')
     #print ("args:",args)
     checkmd5()
     #sys.exit(0)
-    
+
     # Start with a different seed every time to vary the random numbers generated
     random.seed() # the seed will be the current number of second since 01/01/70
-    
+
     # Read the configuration file with data for all the apps that will be executed
     conf.read(args.configFile)
-    
+
     # Set the duplication detection log
     global detectLogFile
     detectLogFile = args.detectLog
-    
+
     numRounds = 0
     while numRounds < args.iterations:
         # Execute the fault injector for each one of the sections(apps) of the configuration file

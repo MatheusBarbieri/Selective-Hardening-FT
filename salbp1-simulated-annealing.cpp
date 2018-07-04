@@ -5,6 +5,7 @@
 #include <iostream>
 #include <unistd.h>
 #include <vector>
+#include <chrono>
 
 //Instance parameters
 int numberOfTasks;
