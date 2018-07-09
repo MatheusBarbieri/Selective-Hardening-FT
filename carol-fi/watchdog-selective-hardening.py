@@ -4,7 +4,8 @@ import os
 import time
 import sys
 
-confFile = "salbp1-sa.conf"
+confFile = "salbp1-sa-selective-hardening.conf"
+detectLog = "due_results.log"
 
 timestampFile = "summary-carolfi.log"
 timestampMaxDiff=60*5 # in seconds
@@ -15,7 +16,7 @@ def killall():
 
 def run():
     killall()
-    os.system("./fault_injector.py -c" + confFile + "-i 9000")
+    os.system("./fault_injector.py -c "+confFile+" -i 9000 -d "+detectLog+"&")
 
 try:
     print "running ..."

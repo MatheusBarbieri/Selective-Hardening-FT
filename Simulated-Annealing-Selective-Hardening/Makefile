@@ -25,8 +25,8 @@ removeObjects:
 	rm -f $(UTILS) $(CODE)
 
 run:
-	./salbp1-sa -c 54 -s 1530488776 -v < ../WEE-MAG.IN2
+	./salbp1-sa -c 54 -s 1530484756 -v < ../WEE-MAG.IN2
 
 generate_gold:
-	./salbp1-sa -c 54 -s 1530488776 -v < ../WEE-MAG.IN2
+	./salbp1-sa -c 54 -s 1530484756 -v < ../WEE-MAG.IN2
 	mv outputs.txt gold_outputs.txt

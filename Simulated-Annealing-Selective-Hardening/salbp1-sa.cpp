@@ -36,13 +36,16 @@ int main(int argc, char **argv) {
     result = data.str();
 
     //register due ocorrence
-    std::ofstream sdcFile("due_results.txt", std::ofstream::app);
-    if (sa.occuredDUE() || sa.getInstance()->occuredDUE()){
-        sdcFile << "DUE detected. Execution Duration: " << durationSec << std::endl;
+    std::ofstream dueFileComplete("due_results_complete.txt", std::ofstream::app);
+    if (sa.occuredDUE() || sa.getInstance()->occuredDUE()) {
+        std::ofstream dueFile("due_results.log", std::ofstream::app);
+        dueFileComplete << "due detected. Execution Duration: " << durationSec << std::endl;
+        dueFile << "due detected.\n";
+        dueFile.close();
     } else {
-        sdcFile << "no DUE. Execution Duration: " << durationSec << std::endl;
+        dueFileComplete << "no due.\n";
     }
-    sdcFile.close();
+    dueFileComplete.close();
 
     //save results to file
     std::ofstream ofile("outputs.txt", std::ofstream::out);
