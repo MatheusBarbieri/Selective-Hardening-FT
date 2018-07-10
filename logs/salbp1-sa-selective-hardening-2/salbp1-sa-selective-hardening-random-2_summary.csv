@@ -1,0 +1,98 @@
+bitflips:;11242
+Total SDCs:;99
+Detected SDCs:;5
+Crashes:;63
+Simultaneous SDCs and Crashes:;0
+
+FaultModels Undetected SDCs:
+FaultModel ;#SDCs; percentage
+Random bit-flip;94;94.94949494949495
+
+FaultModels Detected SDCs:
+FaultModel ;#SDCs Detected; percentage
+Random bit-flip;5;5.05050505050505
+
+FaultModels Crashes:
+FaultModel ;#Crashes; percentage
+Random bit-flip;63;63.63636363636363
+
+Variables that caused Undetected SDCs:
+PVF ;#flips ;#SDCs ;Var name ;file ;line number
+3.4693877551020407;980;34;this;solution.cpp;0
+6.137184115523466;277;17;neigh;solution.cpp;65
+8.333333333333332;60;5;__first;/usr/include/c++/5/bits/stl_algobase.h;436
+7.142857142857142;70;5;__first;/usr/include/c++/5/bits/stl_algobase.h;462
+0.7984031936127743;501;4;this;simulatedannealing.cpp;0
+0.3125;960;3;this;instance.cpp;0
+2.054794520547945;146;3;sa;salbp1-sa.cpp;21
+25.0;4;1;__tmp;/usr/include/c++/5/bits/vector.tcc;194
+12.5;8;1;__last;/usr/include/c++/5/bits/stl_algo.h;1836
+100.0;1;1;randtbl;random.c;146
+1.0309278350515463;97;1;__simple;/usr/include/c++/5/bits/stl_algobase.h;396
+0.20920502092050208;478;1;loop;simulatedannealing.cpp;38
+2.0408163265306123;49;1;__first1;/usr/include/c++/5/bits/stl_algobase.h;1057
+2.857142857142857;35;1;__for_begin;solution.cpp;0
+0.8130081300813009;123;1;instance;salbp1-sa.cpp;19
+1.3513513513513513;74;1;__first2;/usr/include/c++/5/bits/stl_algobase.h;837
+1.5873015873015872;63;1;__x;/usr/include/c++/5/bits/stl_vector.h;1511
+5.0;20;1;__cut;/usr/include/c++/5/bits/stl_algo.h;1947
+5.88235294117647;17;1;_Num;/usr/include/c++/5/bits/stl_algobase.h;382
+12.5;8;1;__it;/usr/include/c++/5/bits/predefined_ops.h;70
+14.285714285714285;7;1;__it;/usr/include/c++/5/bits/stl_algobase.h;293
+33.33333333333333;3;1;__first;/usr/include/c++/5/bits/stl_algobase.h;593
+1.5873015873015872;63;1;__first1;/usr/include/c++/5/bits/stl_algobase.h;837
+1.5625;64;1;__x;/usr/include/c++/5/bits/vector.tcc;168
+1.1904761904761905;84;1;__first;/usr/include/c++/5/bits/stl_algo.h;4689
+3.7037037037037033;27;1;__mid;/usr/include/c++/5/bits/stl_algo.h;1915
+100.0;1;1;__next;/usr/include/c++/5/bits/stl_algo.h;947
+100.0;1;1;stationIndex;solution.cpp;19
+1.1627906976744187;86;1;__first;/usr/include/c++/5/bits/stl_algobase.h;391
+5.0;20;1;__i;/usr/include/c++/5/bits/stl_iterator.h;740
+
+Variables that caused Detected SDCs:
+PVF ;#flips ;#SDCs ;Var name ;file ;line number
+0.20833333333333334;960;2;this;instance.cpp;0
+0.423728813559322;236;1;__xlen;/usr/include/c++/5/bits/vector.tcc;191
+100.0;1;1;__first;/usr/include/c++/5/bits/stl_construct.h;100
+100.0;1;1;disallow_malloc_check;hooks.c;68
+
+Variables that caused Crash:
+PVF ;#flips ;#SDCs ;Var name ;file ;line number
+0.9375;960;9;this;instance.cpp;0
+0.5102040816326531;980;5;this;solution.cpp;0
+5.714285714285714;70;4;__first;/usr/include/c++/5/bits/stl_algobase.h;462
+0.7984031936127743;501;4;this;simulatedannealing.cpp;0
+4.444444444444445;45;2;user_entry;../elf/dl-sysdep.c;89
+0.847457627118644;236;2;__xlen;/usr/include/c++/5/bits/vector.tcc;191
+3.3333333333333335;60;2;__first;/usr/include/c++/5/bits/stl_algobase.h;436
+4.25531914893617;47;2;i;solution.cpp;40
+5.555555555555555;36;2;_rtld_local;rtld.c;162
+3.3333333333333335;60;2;__y;/usr/include/c++/5/bits/stl_vector.h;1511
+1.3333333333333335;150;2;timeBefore;salbp1-sa.cpp;18
+0.32679738562091504;306;1;newStation;solution.cpp;63
+1.1627906976744187;86;1;__first;/usr/include/c++/5/bits/stl_algobase.h;391
+3.225806451612903;31;1;__i;/usr/include/c++/5/bits/stl_algo.h;1861
+0.9259259259259258;108;1;tasks;solution.cpp;11
+100.0;1;1;__last;/usr/include/c++/5/bits/stl_uninitialized.h;279
+2.127659574468085;47;1;_rtld_local_ro;rtld.c;202
+100.0;1;1;__niter;/usr/include/c++/5/bits/stl_algobase.h;768
+1.2987012987012987;77;1;__last;/usr/include/c++/5/bits/stl_algo.h;4689
+2.0408163265306123;49;1;__first1;/usr/include/c++/5/bits/stl_algobase.h;1057
+0.8130081300813009;123;1;instance;salbp1-sa.cpp;19
+1.6666666666666667;60;1;__first;/usr/include/c++/5/bits/stl_algobase.h;335
+0.5405405405405406;185;1;newTasks;solution.cpp;61
+0.6060606060606061;165;1;durationSec;salbp1-sa.cpp;32
+6.25;16;1;__first1;/usr/include/c++/5/bits/stl_algobase.h;827
+1.2658227848101267;79;1;__n;/usr/include/c++/5/bits/stl_algobase.h;338
+1.3513513513513513;74;1;__first2;/usr/include/c++/5/bits/stl_algobase.h;837
+0.23866348448687352;419;1;neighbour;simulatedannealing.cpp;42
+1.5384615384615385;65;1;stationTimes;solution.cpp;49
+2.631578947368421;38;1;__it;/usr/include/c++/5/bits/stl_algobase.h;282
+1.5625;64;1;__x;/usr/include/c++/5/bits/vector.tcc;168
+1.3157894736842104;76;1;i;solution.cpp;50
+2.1739130434782608;46;1;__first2;/usr/include/c++/5/bits/stl_algobase.h;1057
+1.4492753623188406;69;1;__first1;/usr/include/c++/5/bits/stl_algobase.h;813
+1.4925373134328357;67;1;__last1;/usr/include/c++/5/bits/stl_algobase.h;813
+8.333333333333332;12;1;__last;/usr/include/c++/5/bits/stl_algobase.h;373
+1.8181818181818181;55;1;_rtld_global_ro;rtld.c;168
+0.5988023952095809;167;1;instance;solution.cpp;11

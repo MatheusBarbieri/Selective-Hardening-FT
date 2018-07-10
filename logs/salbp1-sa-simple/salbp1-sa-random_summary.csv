@@ -1,0 +1,91 @@
+bitflips:;5325
+SDCs:;945
+Crashes:;813
+Simultaneous SDCs and Crashes:;0
+
+FaultModels SDCs:
+FaultModel ;#SDCs; percentage
+Random bit-flip;945;100.0
+
+FaultModels Crashes:
+FaultModel ;#Crashes; percentage
+Random bit-flip;813;86.03174603174604
+
+Variables that caused SDCs:
+PVF ;#flips ;#    SDCs ;    Var name   ;file ;line number
+90.76305220883533;    249;    226;  seed;   salbp1-simulated-annealing.cpp;   21
+75.65543071161048;    267;    202;  decay;    salbp1-simulated-annealing.cpp;   19
+61.51079136690647;    278;    171;  temperature;    salbp1-simulated-annealing.cpp;   16
+47.43083003952569;    253;    120;  cycleTime;    salbp1-simulated-annealing.cpp;   11
+43.47826086956522;    253;    110;  iterations;   salbp1-simulated-annealing.cpp;   20
+21.78988326848249;    257;    56; temperatureLimit;   salbp1-simulated-annealing.cpp;   18
+12.258064516129032;   155;    19; taskTimes;    salbp1-simulated-annealing.cpp;   12
+40.0;   30;   12; i;    salbp1-simulated-annealing.cpp;   264
+30.76923076923077;    26;   8;  currentSolution;    salbp1-simulated-annealing.cpp;   261
+30.0;   20;   6;  best;   salbp1-simulated-annealing.cpp;   262
+5.4945054945054945;   91;   5;  this;   salbp1-simulated-annealing.cpp;   0
+0.8130081300813009;   246;    2;  verbose;    salbp1-simulated-annealing.cpp;   24
+2.5974025974025974;   77;   2;  precedenceOrder;    salbp1-simulated-annealing.cpp;   13
+7.6923076923076925;   13;   1;  __first;    /usr/include/c++/5/bits/stl_algo.h;   4689
+50.0;   2;    1;  __result;   /usr/include/c++/5/bits/stl_algobase.h;   674
+50.0;   2;    1;  __last;   /usr/include/c++/5/bits/stl_algo.h;   1892
+4.761904761904762;    21;   1;  neigh;    salbp1-simulated-annealing.cpp;   106
+16.666666666666664;   6;    1;  __first;    /usr/include/c++/5/bits/stl_algo.h;   1935
+20.0;   5;    1;  __next;   /usr/include/c++/5/bits/stl_algo.h;   1821
+
+Variables that caused Crash:
+PVF ;#flips ;#SDCs ;Var name ;file ;line number
+73.15175097276264;257;188;temperatureLimit;salbp1-simulated-annealing.cpp;18
+49.80237154150198;253;126;iterations;salbp1-simulated-annealing.cpp;20
+47.43083003952569;253;120;cycleTime;salbp1-simulated-annealing.cpp;11
+31.654676258992804;278;88;temperature;salbp1-simulated-annealing.cpp;16
+25.572519083969464;262;67;numberOfTasks;salbp1-simulated-annealing.cpp;10
+20.224719101123593;267;54;decay;salbp1-simulated-annealing.cpp;19
+13.548387096774196;155;21;taskTimes;salbp1-simulated-annealing.cpp;12
+25.675675675675674;74;19;user_entry;../elf/dl-sysdep.c;89
+56.666666666666664;30;17;i;salbp1-simulated-annealing.cpp;264
+25.396825396825395;63;16;_dl_skip_args;rtld.c;84
+4.761904761904762;252;12;initialTemperature;salbp1-simulated-annealing.cpp;17
+4.471544715447155;246;11;verbose;salbp1-simulated-annealing.cpp;24
+3.2128514056224895;249;8;seed;salbp1-simulated-annealing.cpp;21
+7.6923076923076925;91;7;this;salbp1-simulated-annealing.cpp;0
+7.142857142857142;84;6;__GI__dl_argv;rtld.c;83
+40.0;10;4;nlist;dl-deps.c;163
+3.896103896103896;77;3;precedenceOrder;salbp1-simulated-annealing.cpp;13
+4.3478260869565215;69;3;_dl_argv;rtld.c;86
+11.11111111111111;18;2;tasks;salbp1-simulated-annealing.cpp;48
+2.941176470588235;68;2;_rtld_local;rtld.c;162
+9.523809523809524;21;2;neigh;salbp1-simulated-annealing.cpp;106
+2.3255813953488373;86;2;_rtld_global_ro;rtld.c;168
+28.57142857142857;7;2;errstring;dl-error.c;161
+28.57142857142857;7;2;runp;dl-deps.c;162
+28.57142857142857;7;2;tail;dl-deps.c;162
+1.1494252873563218;87;1;any_debug;rtld.c;2239
+100.0;1;1;lock;random.c;197
+11.11111111111111;9;1;__last;/usr/include/c++/5/bits/stl_algo.h;1958
+2.941176470588235;34;1;neighbour;salbp1-simulated-annealing.cpp;265
+50.0;2;1;__b;/usr/include/c++/5/bits/stl_algo.h;78
+16.666666666666664;6;1;__last;/usr/include/c++/5/bits/stl_algo.h;1816
+1.3333333333333335;75;1;_rtld_local_ro;rtld.c;202
+8.333333333333332;12;1;__first;/usr/include/c++/5/bits/stl_algo.h;1958
+14.285714285714285;7;1;catchp;dl-error.c;180
+16.666666666666664;6;1;__first;/usr/include/c++/5/bits/stl_algo.h;1935
+100.0;1;1;fb;dl-load.c;2195
+3.8461538461538463;26;1;argc;salbp1-simulated-annealing.cpp;250
+20.0;5;1;needed;dl-deps.c;209
+100.0;1;1;__n;/usr/include/c++/5/bits/stl_vector.h;174
+7.6923076923076925;13;1;__first;/usr/include/c++/5/bits/stl_algo.h;4689
+100.0;1;1;i;salbp1-simulated-annealing.cpp;76
+50.0;2;1;objname;dl-error.c;161
+5.0;20;1;v;salbp1-simulated-annealing.cpp;69
+5.0;20;1;argv;salbp1-simulated-annealing.cpp;250
+1.4925373134328357;67;1;_dl_rtld_libname;rtld.c;210
+25.0;4;1;__first;/usr/include/c++/5/bits/stl_algo.h;992
+33.33333333333333;3;1;__it1;/usr/include/c++/5/bits/predefined_ops.h;42
+20.0;5;1;type;dl-load.c;2188
+50.0;2;1;__result;/usr/include/c++/5/bits/stl_algobase.h;674
+100.0;1;1;__val;/usr/include/c++/5/bits/predefined_ops.h;70
+9.090909090909092;11;1;__last;/usr/include/c++/5/bits/stl_algo.h;4689
+3.8461538461538463;26;1;currentSolution;salbp1-simulated-annealing.cpp;261
+25.0;4;1;__first;/usr/include/c++/5/bits/stl_algo.h;1858
+5.0;20;1;best;salbp1-simulated-annealing.cpp;262

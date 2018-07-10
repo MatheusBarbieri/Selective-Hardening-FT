@@ -1,0 +1,86 @@
+bitflips:;6192
+Total SDCs:;235
+Detected SDCs:;234
+Crashes:;208
+Simultaneous SDCs and Crashes:;0
+
+FaultModels Undetected SDCs:
+FaultModel ;#SDCs; percentage
+Random bit-flip;1;0.425531914893617
+
+FaultModels Detected SDCs:
+FaultModel ;#SDCs Detected; percentage
+Random bit-flip;234;99.57446808510639
+
+FaultModels Crashes:
+FaultModel ;#Crashes; percentage
+Random bit-flip;208;88.51063829787233
+
+Variables that caused Undetected SDCs:
+PVF ;#flips ;#SDCs ;Var name ;file ;line number
+1.2658227848101267;79;1;sa2;salbp1-sa.cpp;28
+
+Variables that caused Detected SDCs:
+PVF ;#flips ;#SDCs ;Var name ;file ;line number
+16.06217616580311;386;62;this;simulatedannealing.cpp;0
+3.8860103626943006;772;30;this;solution.cpp;0
+47.368421052631575;57;27;instance2;salbp1-sa.cpp;27
+32.91139240506329;79;26;sa2;salbp1-sa.cpp;28
+11.578947368421053;190;22;instance;solution.cpp;11
+33.33333333333333;63;21;sa1;salbp1-sa.cpp;23
+6.508875739644971;169;11;neigh;solution.cpp;65
+2.095808383233533;334;7;neighbour;simulatedannealing.cpp;34
+10.144927536231885;69;7;instance1;salbp1-sa.cpp;21
+50.0;4;2;__first;/usr/include/c++/5/bits/stl_uninitialized.h;107
+11.11111111111111;18;2;__t;/usr/include/c++/5/bits/move.h;101
+7.4074074074074066;27;2;__i;/usr/include/c++/5/bits/stl_algo.h;1861
+66.66666666666666;3;2;__first;/usr/include/c++/5/bits/stl_algobase.h;462
+4.3478260869565215;23;1;__last;/usr/include/c++/5/bits/stl_algo.h;1892
+3.571428571428571;28;1;__last;/usr/include/c++/5/bits/stl_algo.h;1913
+20.0;5;1;__first;/usr/include/c++/5/bits/stl_algobase.h;373
+1.36986301369863;73;1;__first;/usr/include/c++/5/bits/stl_algo.h;1958
+0.9433962264150944;106;1;__first;/usr/include/c++/5/bits/stl_algo.h;4689
+33.33333333333333;3;1;__first;/usr/include/c++/5/bits/stl_uninitialized.h;279
+1.1904761904761905;84;1;__depth_limit;/usr/include/c++/5/bits/stl_algo.h;1937
+100.0;1;1;unsafe_state;random.c;160
+2.941176470588235;34;1;__cut;/usr/include/c++/5/bits/stl_algo.h;1947
+3.225806451612903;31;1;__first;/usr/include/c++/5/bits/stl_algo.h;1891
+1.694915254237288;59;1;timeBefore;salbp1-sa.cpp;18
+5.555555555555555;18;1;__first;/usr/include/c++/5/bits/stl_algo.h;959
+1.8867924528301887;53;1;__first;/usr/include/c++/5/bits/stl_algo.h;1875
+
+Variables that caused Crash:
+PVF ;#flips ;#SDCs ;Var name ;file ;line number
+16.83937823834197;386;65;this;simulatedannealing.cpp;0
+25.31645569620253;79;20;sa2;salbp1-sa.cpp;28
+2.461139896373057;772;19;this;solution.cpp;0
+22.22222222222222;63;14;sa1;salbp1-sa.cpp;23
+3.8922155688622757;334;13;neighbour;simulatedannealing.cpp;34
+6.842105263157896;190;13;instance;solution.cpp;11
+17.391304347826086;69;12;instance1;salbp1-sa.cpp;21
+4.733727810650888;169;8;neigh;solution.cpp;65
+2.9850746268656714;134;4;tasks;solution.cpp;11
+3.6036036036036037;111;4;v;solution.cpp;33
+7.317073170731707;41;3;_dl_skip_args;rtld.c;84
+1.4634146341463417;205;3;location;solution.cpp;62
+3.061224489795918;98;3;this;instance.cpp;0
+2.9850746268656714;67;2;duration;salbp1-sa.cpp;40
+1.8867924528301887;106;2;__first;/usr/include/c++/5/bits/stl_algo.h;4689
+7.6923076923076925;26;2;__n;/usr/include/c++/5/bits/stl_vector.h;779
+1.5873015873015872;126;2;newTasks;solution.cpp;61
+2.5;80;2;__last;/usr/include/c++/5/bits/stl_algo.h;1958
+0.966183574879227;207;2;newStation;solution.cpp;63
+12.5;16;2;i;solution.cpp;40
+0.5291005291005291;189;1;count;solution.cpp;35
+3.571428571428571;28;1;__last;/usr/include/c++/5/bits/stl_algo.h;1913
+3.8461538461538463;26;1;_rtld_global_ro;rtld.c;168
+6.25;16;1;i;solution.cpp;50
+1.36986301369863;73;1;__first;/usr/include/c++/5/bits/stl_algo.h;1958
+5.555555555555555;18;1;__val;/usr/include/c++/5/bits/predefined_ops.h;70
+5.555555555555555;18;1;__t;/usr/include/c++/5/bits/move.h;101
+1.1904761904761905;84;1;__depth_limit;/usr/include/c++/5/bits/stl_algo.h;1937
+3.225806451612903;31;1;__GI__dl_argv;rtld.c;83
+2.941176470588235;34;1;user_entry;../elf/dl-sysdep.c;89
+1.694915254237288;59;1;timeBefore;salbp1-sa.cpp;18
+8.333333333333332;12;1;__b;/usr/include/c++/5/bits/stl_algobase.h;120
+1.9607843137254901;51;1;__last;/usr/include/c++/5/bits/stl_algo.h;1936
